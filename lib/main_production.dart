@@ -1,6 +1,8 @@
-import 'package:comradia/app/app.dart';
+import 'package:api_repository/api_repository.dart';
+import 'package:comradia/app/view/app.dart';
 import 'package:comradia/bootstrap.dart';
 
 void main() {
-  bootstrap(() => const App());
+  const apiRepository = ApiRepository();
+  bootstrap(() => const App(apiRepository: apiRepository));
 }

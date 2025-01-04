@@ -1,22 +1,20 @@
-import 'package:comradia/counter/counter.dart';
-import 'package:comradia/l10n/l10n.dart';
-import 'package:flutter/material.dart';
+import 'package:api_repository/api_repository.dart';
+import 'package:comradia/app/app.dart';
+import 'package:comradia/todos/cubit/todos_cubit.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App({required this.apiRepository, super.key});
 
+  final ApiRepository apiRepository;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        ),
-        useMaterial3: true,
+    return BlocProvider(
+      create: (context) => TodosCubit(
+        apiRepository: apiRepository,
       ),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      child: const AppView(),
     );
   }
 }

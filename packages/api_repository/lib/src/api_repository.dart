@@ -5,5 +5,5 @@ class ApiRepository {
   /// {@macro api_repository}
   const ApiRepository();
 
-  void fetchTodos() => ['Make homework', 'Go to shop', 'Cook the dinner'];
+  List<String> fetchTodos() => ['Make homework', 'Go to shop', 'Cook the dinner'];
 }
