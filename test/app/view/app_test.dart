@@ -7,9 +7,11 @@ void main() {
   group('App', () {
     testWidgets('renders CounterPage', (tester) async {
       const apiRepository = ApiRepository();
-      await tester.pumpWidget(const App(
-        apiRepository: apiRepository,
-      ));
+      await tester.pumpWidget(
+        const App(
+          apiRepository: apiRepository,
+        ),
+      );
       expect(find.byType(CounterPage), findsOneWidget);
     });
   });

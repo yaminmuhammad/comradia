@@ -8,6 +8,7 @@ class App extends StatelessWidget {
   const App({required this.apiRepository, super.key});
 
   final ApiRepository apiRepository;
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
