@@ -1,5 +1,5 @@
 import 'package:comradia/l10n/l10n.dart';
-import 'package:comradia/todos/view/todos_view.dart';
+import 'package:comradia/todos/view/todos_page.dart';
 import 'package:flutter/material.dart';
 
 class AppView extends StatelessWidget {
@@ -16,7 +16,7 @@ class AppView extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const TodosView(),
+      home: const TodosPage(),
     );
   }
 }
