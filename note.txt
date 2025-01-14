@@ -1,3 +1,19 @@
+SETUP DATABASE SUPABASE 
+1. jalankan SQL
+2. masuk ke menu Database -> funtion -> cari delete_storage_object -> edit function -> masukkan project_url: text dan service_role_key: text
+3. setup powersync
+
+
+SETUP POWERSYNC 
+1. create project lalu pilih powesync project
+2. 
+
+AMBIL PROJECT URL KEY DAN SERVICE ROLE KEY
+1. untuk project utl => masuk ke menu setting -> API -> copy Url
+2. untuk Service Role Key -> masuk ke menu setting -> API -> copy service_role_key
+
+
+SETUP ENV
 1. bikin folder package env 
 2. install dependencies dan dev_dependencies 
 3. 
