@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 extension PumpApp on WidgetTester {
+  // pumpApp is a helper function that pumps a MaterialApp with the given widget
   Future<void> pumpApp(Widget widget) {
     return pumpWidget(
       MaterialApp(
