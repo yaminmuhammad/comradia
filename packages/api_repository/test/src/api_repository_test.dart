@@ -8,4 +8,9 @@ void main() {
       expect(ApiRepository(), isNotNull);
     });
   });
+  // group('ApiRepository', () {
+  //   test('can be instantiated', () {
+  //     expect(ApiRepository(), isNotNull);
+  //   });
+  // });
 }
