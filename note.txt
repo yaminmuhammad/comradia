@@ -4,13 +4,14 @@ SETUP DATABASE SUPABASE
 3. setup powersync
 
 
-SETUP POWERSYNC 
-1. create project lalu pilih powesync project
-2. 
-
 AMBIL PROJECT URL KEY DAN SERVICE ROLE KEY
 1. untuk project utl => masuk ke menu setting -> API -> copy Url
 2. untuk Service Role Key -> masuk ke menu setting -> API -> copy service_role_key
+
+
+SETUP POWERSYNC 
+1. create project lalu pilih powesync project
+2. setting sync-rules.yaml. settingan ada di file sync-rules.yaml
 
 
 SETUP ENV
