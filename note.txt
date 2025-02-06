@@ -9,12 +9,18 @@ AMBIL PROJECT URL KEY DAN SERVICE ROLE KEY
 2. untuk Service Role Key -> masuk ke menu setting -> API -> copy service_role_key
 
 
+
 SETUP POWERSYNC 
 1. create project lalu pilih powesync project
 2. setting sync-rules.yaml. settingan ada di file sync-rules.yaml
+3. klik kanan pada PowerSync Project lalu create instance 
+4. lalu setup db connection which is adalah supabase
+5. setup connection with connection string lalu copy dan paste pada instance powersync (note: pass=stanners2020)
+6. lalu pindah tab ke client auth dan centang 'use supabase auth' dan centang 'enable development tokens'
+7. setelah deploy instance finish bakal muncul warning 'no sync rules deployed' nah bisa lakukan deploy sync rules
+8. Done 🎉
 
-
-SETUP ENV
+SETUP ENV DAN OTHER PACKAGE 
 1. bikin folder package env 
 2. install dependencies dan dev_dependencies 
 3. 

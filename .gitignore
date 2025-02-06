@@ -111,5 +111,4 @@ app.*.map.json
 !.idea/dictionaries/
 !.idea/runConfigurations/
 
-# Exception file note
-note.txt
+
